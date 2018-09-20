@@ -1,0 +1,30 @@
+type& var - a reference
+    name var is another name for the object
+    int& x = y
+        x is another name for y
+        anything done to y changes x and vice versa
+    no such thing as a reference to a reference
+
+for functions using reference parameters
+    reference parameters without const mean the original object will be changed
+    when the function is expected to modify the argument an lvalue must be passed to it
+
+lvalue - a value that denotes a non temporary object
+    variables, result of a function that returns a reference
+    an expression returning an arithmetic value isn't an lvalue
+
+3 kinds of function parameters:
+    the argument is copied
+    const references where the argument won't be changed
+    non const references where the original object can be changed
+        which must be lvalues (non temporary objects)
+        otherwise the temporary object which would disappear after the function call
+            if it was allowed changes would be made to an inaccessable object
+
+
+structs same as in c
+
+string(int, char)
+    constructs nameless string object
+    with char int times
+    e.g. string(5, 'a') = "aaaaa"
