@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/personal-projects/c++/Accelerated-C++/
+mupdf Andrew-Koening-and-Barbara-E.-Moo-Accelerated-C-.pdf &
+atom .

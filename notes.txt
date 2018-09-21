@@ -28,3 +28,9 @@ string(int, char)
     constructs nameless string object
     with char int times
     e.g. string(5, 'a') = "aaaaa"
+
+include with double quotes to get local headers like c
+multifile programs:
+    for source file foo.cpp contains function implementations
+    have header file foo.h containing declerations
+    #include "foo.h" in foo.cpp so compiler checks for inconsistencies
