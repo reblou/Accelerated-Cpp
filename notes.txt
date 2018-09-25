@@ -34,3 +34,8 @@ multifile programs:
     for source file foo.cpp contains function implementations
     have header file foo.h containing declerations
     #include "foo.h" in foo.cpp so compiler checks for inconsistencies
+
+header files should be wrapped in #ifndef GUARD_... to guard against multiple inclusion
+header files shouldn't use using- declerations
+
+functions can be overloaded
